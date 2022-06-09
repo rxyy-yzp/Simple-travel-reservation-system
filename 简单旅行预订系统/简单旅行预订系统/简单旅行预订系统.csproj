@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EF24D16-E74B-434C-B4C8-F8FB23732F6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>简单旅行预订系统</RootNamespace>
+    <AssemblyName>简单旅行预订系统</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Air tickets.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin1.Designer.cs">
+      <DependentUpon>Admin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBus.Designer.cs">
+      <DependentUpon>AdminBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFlight.Designer.cs">
+      <DependentUpon>AdminFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHotel.Designer.cs">
+      <DependentUpon>AdminHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInsertBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInsertBus.Designer.cs">
+      <DependentUpon>AdminInsertBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInsertFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInsertFlight.Designer.cs">
+      <DependentUpon>AdminInsertFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInsertHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInsertHotel.Designer.cs">
+      <DependentUpon>AdminInsertHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInsertUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInsertUser.Designer.cs">
+      <DependentUpon>AdminInsertUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateBus.Designer.cs">
+      <DependentUpon>AdminUpdateBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateFlight.Designer.cs">
+      <DependentUpon>AdminUpdateFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateHotel.Designer.cs">
+      <DependentUpon>AdminUpdateHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateUser.Designer.cs">
+      <DependentUpon>AdminUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUserManage.Designer.cs">
+      <DependentUpon>AdminUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewBus.Designer.cs">
+      <DependentUpon>AdminViewBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewCity.Designer.cs">
+      <DependentUpon>AdminViewCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewFlight.Designer.cs">
+      <DependentUpon>AdminViewFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewHotel.Designer.cs">
+      <DependentUpon>AdminViewHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMyResv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMyResv.Designer.cs">
+      <DependentUpon>CustomerMyResv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerResvHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerResvHotel.Designer.cs">
+      <DependentUpon>CustomerResvHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustData.cs" />
+    <Compile Include="Customer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer1.Designer.cs">
+      <DependentUpon>Customer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerQuery.Designer.cs">
+      <DependentUpon>CustomerQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerResvBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerResvBus.Designer.cs">
+      <DependentUpon>CustomerResvBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerResvFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerResvFlight.Designer.cs">
+      <DependentUpon>CustomerResvFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dao.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin1.resx">
+      <DependentUpon>Admin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBus.resx">
+      <DependentUpon>AdminBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFlight.resx">
+      <DependentUpon>AdminFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHotel.resx">
+      <DependentUpon>AdminHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInsertBus.resx">
+      <DependentUpon>AdminInsertBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInsertFlight.resx">
+      <DependentUpon>AdminInsertFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInsertHotel.resx">
+      <DependentUpon>AdminInsertHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInsertUser.resx">
+      <DependentUpon>AdminInsertUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateBus.resx">
+      <DependentUpon>AdminUpdateBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateFlight.resx">
+      <DependentUpon>AdminUpdateFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateHotel.resx">
+      <DependentUpon>AdminUpdateHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateUser.resx">
+      <DependentUpon>AdminUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserManage.resx">
+      <DependentUpon>AdminUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewBus.resx">
+      <DependentUpon>AdminViewBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewCity.resx">
+      <DependentUpon>AdminViewCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewFlight.resx">
+      <DependentUpon>AdminViewFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewHotel.resx">
+      <DependentUpon>AdminViewHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMyResv.resx">
+      <DependentUpon>CustomerMyResv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerResvHotel.resx">
+      <DependentUpon>CustomerResvHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer1.resx">
+      <DependentUpon>Customer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerQuery.resx">
+      <DependentUpon>CustomerQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerResvBus.resx">
+      <DependentUpon>CustomerResvBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerResvFlight.resx">
+      <DependentUpon>CustomerResvFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Air tickets.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
